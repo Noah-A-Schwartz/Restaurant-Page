@@ -56,9 +56,11 @@ li{
     float: left;
     padding: 15px;
     font-size: 2em;
-    color: #FFC49B;
-    background-color: ;
+    color: #FFC49B; 
 }
-li :hover{
 
-}
+li:hover{
+    color: #ADB6C4;
+    text-decoration: underline;
+    cursor: pointer;
+}   
