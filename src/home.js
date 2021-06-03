@@ -1,34 +1,11 @@
 //Loads home page
-
+import {loadHeader} from './header'
 const loadHome = () =>{
+
     let body = document.getElementsByTagName("body")[0];
-
-    //Header Text
-    let header = document.createElement("header");
-    body.append(header);
-    header.append(document.createElement("h1"));
-    document.getElementsByTagName("h1")[0].textContent = "Welcome to Noah's Fried Chicken";
-
-    //nav
-    let ul = document.createElement("ul");
-    header.append(ul)
-    ul.append(document.createElement("li"))
-    ul.append(document.createElement("li"))
-    ul.append(document.createElement("li"))
-    document.getElementsByTagName('li')[0].textContent = "Home";
-    document.getElementsByTagName('li')[1].textContent = "Menu";
-    document.getElementsByTagName('li')[2].textContent = "Contact"
-    
-
-
-
-
-   
-
-
     //create content div
-    let content = document.createElement("div");
-    content.id = 'content';
+    let content = document.getElementById("content");
+    content.innerHTML = "";
     let img = document.createElement("img");
     img.id = "chicken-img";
     img.src = ".\\Resources\\fried-chicken.png";
