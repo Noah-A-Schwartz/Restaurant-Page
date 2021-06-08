@@ -46,6 +46,10 @@ h1 {
     background-color: #001B2E;
     color: #ADB6C4;
 }
+p{
+    font-size: 3em;
+    color: #001B2E;  
+}
 
 ul{
     list-style-type: none;
